@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 2.6vw;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+}
+
+/* Utilities */
+
+.container {
+    margin: 10rem auto;
+    width: 60%;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mt-2 {
+    margin-top: 1.5vw;
+}
+
+.mt-4 {
+    margin-top: 4vw;
+}
+
+.yellow {
+    color: #F1D514;
+}
+
+.blue {
+    color: #039AC9;
+}
+
+.green {
+    color: #55A43B;
+}
+
+.red {
+    color: #DA1725;
+}
+
+/* Corpo */
+
+.pad {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    filter: contrast(1);
+}
+
+.main-body {
+    z-index: 2;
+    width: 35vw;
+    aspect-ratio: 1.6;
+    background: radial-gradient(ellipse at top, rgb(51, 51, 51), rgb(22, 22, 22) 70%);
+    border-top: 10px solid rgb(87, 87, 87);
+    border-radius: 22% 22% 0 0;
+
+}
+
+.upper-side {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.bottom-side {
+    display: flex;
+    justify-content: space-between;
+    height: 40%;
+    margin: 0 8vw;
+}
+
+.center-body {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grip {
+    height: 30vw;
+    aspect-ratio: 0.45;
+}
+
+.left {
+    border-radius: 20% 0 30% 70%;
+    position: absolute;
+    left: 12%;
+    rotate: 30deg;
+    background: linear-gradient(40deg, rgb(59, 59, 59), rgb(22, 22, 22) 35%);
+}
+
+.right {
+    border-radius: 0 20% 70% 30%;
+    position: absolute;
+    right: 12%;
+    rotate: 330deg;
+    background: linear-gradient(-40deg, rgb(59, 59, 59), rgb(22, 22, 22) 30%);
+}
+
+
+/*/* Bottoni */
+
+/* Dorsali */
+
+.B {
+    z-index: 1;
+    height: 4vw;
+    position: absolute;
+    width: 10vw;
+    border-top: 3px solid black;
+}
+
+.L {
+    background: linear-gradient(170deg, rgb(0, 0, 0), rgb(0, 0, 0)15%, rgb(65, 65, 65) 60%);
+    border-radius: 90% 15px 0 0;
+    border-right: 5px solid black;
+    top: -6%;
+    left: 23%;
+}
+
+.R {
+    background: linear-gradient(190deg, rgb(0, 0, 0), rgb(0, 0, 0)15%, rgb(65, 65, 65) 60%);
+    border-radius: 15px 90% 0 0;
+    border-left: 5px solid black;
+    top: -6%;
+    right: 23%;
+}
+
+/* Centrali */
+
+.circle {
+    height: 4vw;
+    aspect-ratio: 1/1;
+    background-color: rgb(34, 34, 34);
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.small.circle {
+    height: 2.2vw;
+    background: radial-gradient(ellipse at top, rgb(51, 51, 51), rgb(32, 32, 32), black 99%);
+}
+
+.central-buttons {
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.share-button {
+    margin-top: .8vw;
+    height: 1.4vw;
+    width: 2.5vw;
+    background: radial-gradient(ellipse at top, rgb(51, 51, 51) 20%, black);
+    border-radius: 40px;
+    border: 2px solid black;
+}
+
+.share-button>img {
+    height: 60%;
+    width: 50%;
+}
+
+.small.circle>img {
+    height: 50%;
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+.small.circle:last-child>img {
+    height: 40%;
+}
+
+/* Laterali */
+
+.side-buttons {
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 2vw;
+}
+
+.side-buttons>* {
+    width: 100%;
+    height: 30%;
+    transform: perspective(500px);
+}
+
+.side-buttons>*:nth-child(2) {
+    width: 95%;
+    justify-content: space-between;
+}
+
+.medium.circle {
+    height: 3.5vw;
+    background: radial-gradient(ellipse at bottom left, rgb(0, 0, 0) 70%, rgb(255, 255, 255) 95%);
+    transform: rotateX(10deg);
+}
+
+/* Analogici */
+
+.analog {
+    width: 30%;
+}
+
+.huge.circle {
+    height: 6.5vw;
+    border: none;
+    -webkit-box-shadow: -9px -8px 9px -2px #ffffff;
+    box-shadow: -9px -8px 9px -2px #363636;
+}
+
+.bigger.circle {
+    height: 6.5vw;
+    background-color: rgb(20, 20, 20);
+    border: 5px solid rgb(37, 37, 37);
+    -webkit-box-shadow: 2px 11px 9px 4px #000000;
+    box-shadow: 2px 11px 9px 4px #000000;
+
+}
+
+.big.circle {
+    height: 5.5vw;
+    -webkit-box-shadow: 2px 5px 5px 2px #000000;
+    box-shadow: 2px 5px 5px 1px #000000;
+}
+
+.analog>.huge>.bigger>.big>.circle {
+    margin: 0;
+    background: radial-gradient(ellipse at bottom right, rgb(41, 41, 41)0%, rgb(0, 0, 0));
+}
+
+/* Croce direzionale */
+
+.cross {
+    margin-top: 1.2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.cross>.huge.circle {
+    height: 8vw;
+    box-shadow: none;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #000000;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.square {
+    height: calc(100% / 3);
+    aspect-ratio: 1/1;
+    background-color: #2e2e2e;
+    border: 1px solid black;
+}
+
+.square:nth-child(1) {
+    background: radial-gradient(circle at bottom right, rgb(17, 17, 17)45%, rgb(163, 163, 163));
+    border-radius: 0 0 20%;
+    border-bottom: none;
+}
+
+.square:nth-child(2) {
+    border-top: none;
+    background: radial-gradient(circle at bottom, rgb(12, 12, 12)80%, rgb(94, 94, 94)97%);
+}
+
+.square:nth-child(3) {
+    background: radial-gradient(circle at bottom left, rgb(17, 17, 17)50%, rgb(161, 161, 161));
+    border-radius: 0 0 20%;
+}
+
+.square:nth-child(4) {
+    background: radial-gradient( circle at right, rgb(24, 24, 24)80%, rgb(88, 88, 88));
+    border-left: none;
+}
+
+.square:nth-child(5) {
+    background: rgb(41, 41, 41);
+    border: none;
+}
+
+.square:nth-child(6) {
+    background: radial-gradient(circle at left, rgb(48, 48, 48) 80%, rgb(121, 121, 121));
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.square:nth-child(7) {
+    background: radial-gradient(circle at top right, rgb(43, 43, 43) 45%, rgb(5, 5, 5) 70%);
+    border: none;
+}
+
+.square:nth-child(8) {
+    background: radial-gradient(circle at top, rgb(59, 59, 59)75%, rgb(0, 0, 0));
+    border-right: none;
+}
+
+.square:nth-child(9) {
+    background: radial-gradient(circle at top left, rgb(59, 59, 59)45%, rgb(0, 0, 0)70%);
+    border-right: none;
+}
